@@ -10,6 +10,7 @@ public interface PersonDao
 
     default int addPerson(Person person) {
         UUID id= UUID.randomUUID().randomUUID();
+        System.out.println("Hello");
         return insertPerson(id,person);
     }
 
